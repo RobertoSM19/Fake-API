@@ -15,7 +15,7 @@ const menu=document.getElementById("selUsers");
         .then (response=>response.json())
         .then(json=>{
             let info=document.getElementById('info');
-            info.innerHTML+=`<p><b>Nombre:</b> ${json.name} <br><b>Email:</b> ${json.email} <br><b>Calle:</b> ${json.address.street} <br><b>Ciudad:</b>${json.address.city} <br><b>Teléfono:</b> ${json.phone}</p>`
+            info.innerHTML=`<p><b>Nombre:</b> ${json.name} <br><b>Email:</b> ${json.email} <br><b>Calle:</b> ${json.address.street} <br><b>Ciudad:</b>${json.address.city} <br><b>Teléfono:</b> ${json.phone}</p>`
             // console.log(json);
         })
 });
@@ -26,12 +26,13 @@ but.addEventListener('click',()=>{
     .then((response)=>response.json())
     .then((json)=>{
         let info=document.getElementById('inPosts');
+        info.innerHTML='<p></p>'
         json.forEach(pub=>{
             info.innerHTML+=`
-            <div id="pub${pub.id}">
+            <div class='divPos' id="pub${pub.id}">
                 <h2>${pub.title}</h2>
                 <p>${pub.body}</p>
-                <button onclick="find(${pub.id})">Ver comentarios</button>
+                <button class='btnCss btnInf' onclick="find(${pub.id})">Ver comentarios</button>
                 <div id="pcom${pub.id}">    
                 </div>
             </div>`;
@@ -44,15 +45,16 @@ function find(x){
     .then(response=>response.json())
     .then(json=>{
         const bot=document.getElementById(`pcom${x}`);
+        bot.innerHTML='<p></p>'
         json.forEach(num=>{
             bot.innerHTML+=(`
-            <div id="num${num.id}">
+            <div class='divCom' id="num${num.id}">
                 <h3>Nombre: ${num.name}</h3>
                 <p>Correo: ${num.email}<br>${num.body}</p>
             </div>
             `);
         });
-        bot.innerHTML+=`<button type="button" onclick="ocultar(${x})">Ocultar comentarios</button>`;
+        bot.innerHTML+=`<button class='btnCss btnOcu' type="button" onclick="ocultar(${x})">Ocultar comentarios</button>`;
     });
 };
 

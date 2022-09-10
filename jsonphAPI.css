@@ -1,0 +1,83 @@
+.btnCss{
+    background-color: red;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 5px gray;
+}
+
+.btnInf{
+    background-color: white; 
+    color: black; 
+    border: 2px solid red;
+}
+
+.btnInf:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 0px 5px white;
+} 
+
+.btnOcu{
+    background-color: white; 
+    color: black; 
+    border: 2px solid green;
+}
+
+.btnOcu:hover{
+    background-color: green;
+    color: white;
+    box-shadow: 0px 5px white;
+} 
+
+#app{
+    border: solid;
+    border-color:black;
+    margin: 5px;
+    border-width: 10px;
+}
+
+#inPosts{
+    border: solid;
+    border-color:pink;
+    margin: 5px;
+    border-width: 8px;
+}
+
+#info{
+    border: solid;
+    border-color:green;
+    margin: 5px;
+    border-width: 6px;
+    text-align: center;
+}
+
+.divCom{
+    border: solid;
+    border-color:purple;
+    margin: 5px;
+    border-width: 6px;
+}
+
+.divPos{
+    border: solid;
+    border-color:orange;
+    margin: 5px;
+    border-width: 6px;
+}
+
+select{
+    border: solid;
+   border-color: aqua;
+   border-width: 4px;
+   font-size: 15px;
+   text-align: center;
+}
