@@ -50,7 +50,7 @@ function find(x){
             bot.innerHTML+=(`
             <div class='divCom' id="num${num.id}">
                 <h3>Nombre: ${num.name}</h3>
-                <p>Correo: ${num.email}<br>${num.body}</p>
+                <p>Correo: ${num.email}<br><br>${num.body}</p>
             </div>
             `);
         });

@@ -23,7 +23,7 @@
 .btnInf:hover{
     background-color: red;
     color: white;
-    box-shadow: 0px 5px white;
+    box-shadow: 0px 5px transparent;
 } 
 
 .btnOcu{
@@ -35,22 +35,8 @@
 .btnOcu:hover{
     background-color: green;
     color: white;
-    box-shadow: 0px 5px white;
+    box-shadow: 0px 5px transparent;
 } 
-
-#app{
-    border: solid;
-    border-color:black;
-    margin: 5px;
-    border-width: 10px;
-}
-
-#inPosts{
-    border: solid;
-    border-color:pink;
-    margin: 5px;
-    border-width: 8px;
-}
 
 #info{
     border: solid;
@@ -62,16 +48,19 @@
 
 .divCom{
     border: solid;
-    border-color:purple;
+    border-color:black;
+    background-color: purple;
+    color: white;
     margin: 5px;
-    border-width: 6px;
+    border-width: 4px;
 }
 
 .divPos{
     border: solid;
-    border-color:orange;
+    border-color:black;
+    background-color: orange;
     margin: 5px;
-    border-width: 6px;
+    border-width: 4px;
 }
 
 select{
